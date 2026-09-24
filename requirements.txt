@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# requirements.txt
+# Netflix Customer Churn & Engagement Analytics Using AI
+#
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# Versions reflect the environment used to develop and validate the notebook.
+# The minimum version bounds (>=) allow compatible upgrades while preventing
+# known breaking changes.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Data manipulation ─────────────────────────────────────────────────────────
+pandas>=2.0,<4.0          # DataFrame I/O, groupby, pivot_table, cut, clip
+numpy>=1.24,<3.0          # Array ops, random seed, quantile calculations
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7,<4.0      # pyplot, ticker, ConfusionMatrixDisplay
+seaborn>=0.12,<1.0        # set_theme, histplot, boxplot, heatmap, scatterplot
+
+# ── Machine learning ──────────────────────────────────────────────────────────
+scikit-learn>=1.3,<2.0    # LogisticRegression, RandomForestClassifier,
+                          # GradientBoostingClassifier, train_test_split,
+                          # cross_val_score, StratifiedKFold, LabelEncoder,
+                          # StandardScaler, classification_report,
+                          # confusion_matrix, ConfusionMatrixDisplay,
+                          # roc_auc_score, roc_curve, accuracy_score,
+                          # precision_score, recall_score, f1_score
+
+# ── Notebook runtime ──────────────────────────────────────────────────────────
+# Choose ONE of the following depending on your preferred interface:
+jupyter>=1.0              # Classic Jupyter Notebook  (jupyter notebook)
+# jupyterlab>=4.0         # JupyterLab interface       (jupyter lab)
+# ipykernel>=6.0          # Required if running via VS Code Jupyter extension
